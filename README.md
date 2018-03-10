@@ -15,7 +15,7 @@ $ tweet -v "hello, world"
 - click on manage keys
 - generate access tokens
 - copy tokens in the `~/.twitter.cfg`
-- important: NO EMPTY LINES. This will likely be changed in futher versions but currently it breaks the script
+- important: NO EMPTY LINES. This will likely be changed in future versions but currently it breaks the script
 example:
 ```properties
 consumer_key=XXXXXX
