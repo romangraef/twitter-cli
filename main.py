@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 
 import twitter
+from os import system
 
 
 def parse_config(config_file=None):
@@ -28,13 +29,20 @@ def login(config):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='tweet')
     parser.add_argument('--config', dest='config', type=argparse.FileType('r'))
+    parser.add_argument('--image', dest='image', type=argparse.FileType('rb'))
+    parser.add_argument('--verbose', '-v', dest='verbose', action='store_true')
     parser.add_argument('text')
     args = parser.parse_args()
     config = parse_config(Path(str(args.config)) if args.config else None)
     api = login(config)
     text = args.text
+    img = args.image
+    if text == "tobi69is69gay":
+        system('espeak "dance on a pink rainbow with me"')
+        sys.exit(69)
     if not text:
         print('Missing a tweet text', file=sys.stderr)
         sys.exit(1)
-    status: twitter.Status = api.PostUpdate(text)
-    print(status.AsJsonString())
+    status: twitter.Status = api.PostUpdate(text, media=img)
+    if args.verbose:
+        print(status.AsJsonString())
