@@ -1,5 +1,5 @@
 # twitter-cli
-a simple twitter cli. may add features but you know how side projects go..
+a simple twitter cli. May add features but you know how side projects go..
 
 ## Tweet via commandline
 ```bash
@@ -11,11 +11,11 @@ $ tweet -v "hello, world"
 
 ## Installation
 - Clone and run `./install.sh`
-- create an application over at [twitter apps][twitterapps]
+- create an application over at [Twitter Apps][twitterapps]
 - click on manage keys
 - generate access tokens
 - copy tokens in the `~/.twitter.cfg`
-- important: NO EMPTY LINES. this will likely be changed in feature versions but currently breaks stuff
+- important: NO EMPTY LINES. This will likely be changed in future versions but currently it breaks the script
 example:
 ```properties
 consumer_key=XXXXXX
