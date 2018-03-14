@@ -37,10 +37,10 @@ if __name__ == '__main__':
     api = login(config)
     text = args.text
     img = args.image
-    if text == "tobi69is69gay":
+    if text.lower() == "tobi69is69gay":
         system('espeak "dance on a pink rainbow with me"')
         sys.exit(69)
-    elif text == "hallo":
+    elif text.lower() == "hallo":
         system('espeak "HELLO DARKNESS MY OLD FRIEND!"')
         sys.exit(69)
     if not text:
