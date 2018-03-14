@@ -1,5 +1,6 @@
 # twitter-cli
 a simple twitter cli. May add features but you know how side projects go..
+Helele, just kidding. :p
 
 ## Tweet via commandline
 ```bash
