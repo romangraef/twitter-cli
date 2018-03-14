@@ -13,8 +13,9 @@ def parse_config(config_file=None):
     lines = config_text.split('\n')
     config_obj = {}
     for line in lines:
-        parts = line.split('=')
-        config_obj[parts[0]] = parts[1]
+        if line:
+            parts = line.split('=')
+            config_obj[parts[0]] = parts[1]
     return config_obj
 
 
