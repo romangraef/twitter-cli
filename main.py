@@ -40,6 +40,9 @@ if __name__ == '__main__':
     if text == "tobi69is69gay":
         system('espeak "dance on a pink rainbow with me"')
         sys.exit(69)
+    elif text == "hallo":
+        system('espeak "HELLO DARKNESS MY OLD FRIEND!"')
+        sys.exit(69)
     if not text:
         print('Missing a tweet text', file=sys.stderr)
         sys.exit(1)
