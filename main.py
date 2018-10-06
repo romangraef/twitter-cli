@@ -44,6 +44,9 @@ if __name__ == '__main__':
     elif text.lower() == "hallo":
         system('espeak "HELLO DARKNESS MY OLD FRIEND!"')
         sys.exit(69)
+    elif text.lower() == "hello world":
+        system('espeak "oh go away nobody wants hello world scripts"')
+        sys.exit(69)
     if not text:
         print('Missing a tweet text', file=sys.stderr)
         sys.exit(1)
